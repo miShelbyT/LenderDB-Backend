@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Lender.destroy_all
+
+Lender.create(name: "Dime Bank")
+Lender.create(name: "PNC Bank")
+Lender.create(name: "Chase")
+Lender.create(name: "Ally Bank")
+
+
