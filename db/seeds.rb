@@ -8,9 +8,9 @@
 
 Lender.destroy_all
 
-Lender.create(name: "Dime Bank")
-Lender.create(name: "PNC Bank")
-Lender.create(name: "Chase")
+Lender.create(name: "Dimes Bank", states: ["NY", "NJ"])
+Lender.create(name: "PNC Bank" )
+Lender.create(name: "Chase", states: ["CO", "VT", "MS"])
 Lender.create(name: "Ally Bank")
 
 
