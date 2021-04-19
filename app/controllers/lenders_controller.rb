@@ -3,9 +3,9 @@ class LendersController < ApplicationController
 
   # GET /lenders
   def index
-    @lenders = Lender.all
+    @lenders = Lender.all.includes(:states)
 
-    render json: @lenders
+    render json: @lenders, include: :states
   end
 
   # GET /lenders/1
@@ -46,6 +46,6 @@ class LendersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lender_params
-      params.require(:lender).permit(:name)
+      params.require(:lender).permit(:name, provinces: [])
     end
 end

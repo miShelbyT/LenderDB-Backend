@@ -1,3 +1,3 @@
 class LenderSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :provinces
 end

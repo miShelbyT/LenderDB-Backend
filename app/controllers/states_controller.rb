@@ -5,7 +5,7 @@ class StatesController < ApplicationController
   def index
     @states = State.all
 
-    render json: @states
+    render json: @states, include: :lender 
   end
 
   # GET /states/1
