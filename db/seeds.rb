@@ -8,9 +8,20 @@
 
 Lender.destroy_all
 
-Lender.create(name: "Dimes Bank", states: ["NY", "NJ"])
+Lender.create(name: "Dime Bank")
 Lender.create(name: "PNC Bank" )
-Lender.create(name: "Chase", states: ["CO", "VT", "MS"])
+Lender.create(name: "Chase")
 Lender.create(name: "Ally Bank")
+
+State.create(name: "NY")
+State.create(name: "NJ")
+State.create(name: "TX")
+State.create(name: "MO")
+State.create(name: "IL")
+State.create(name: "CA")
+
+20.times do
+
+
 
 
