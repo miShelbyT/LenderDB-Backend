@@ -1,3 +1,5 @@
 class LenderSerializer < ActiveModel::Serializer
-  attributes :id, :name, :provinces, :counties, :cities, :radius
+  attributes :id, :name, :provinces, :counties, :cities, :radius, :max_loan_amt, :min_loan_amt, :ltv, :ltc, :index_type, :bps, :base_rate, :above_base
 end
+
+

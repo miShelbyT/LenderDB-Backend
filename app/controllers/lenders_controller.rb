@@ -46,6 +46,7 @@ class LendersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lender_params
-      params.require(:lender).permit(:name, :radius, provinces: [], counties: [], cities: [])
+      params.require(:lender).permit(:name, :index_type, :radius, :bps, :max_loan_amt, :min_loan_amt, :ltv, :ltc, :base_rate, :above_base, provinces: [], counties: [], cities: [])
     end
 end
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_21_160851) do
+ActiveRecord::Schema.define(version: 2021_04_22_204457) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 2021_04_21_160851) do
     t.string "cities", default: [], array: true
     t.string "counties", default: [], array: true
     t.integer "radius"
+    t.integer "max_loan_amt"
+    t.integer "min_loan_amt"
+    t.float "ltv"
+    t.float "ltc"
+    t.string "index_type"
+    t.integer "bps"
+    t.float "base_rate"
+    t.float "above_base"
   end
 
   create_table "states", force: :cascade do |t|
