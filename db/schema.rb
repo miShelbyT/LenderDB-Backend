@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_22_204457) do
+ActiveRecord::Schema.define(version: 2021_04_23_190613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,13 @@ ActiveRecord::Schema.define(version: 2021_04_22_204457) do
     t.integer "bps"
     t.float "base_rate"
     t.float "above_base"
+    t.string "full_name"
+    t.string "phone"
+    t.string "email"
+    t.string "website"
+    t.integer "amortization"
+    t.float "loan_term"
+    t.boolean "recourse"
   end
 
   create_table "states", force: :cascade do |t|
