@@ -23,10 +23,9 @@ class LenderSerializer < ActiveModel::Serializer
     :property_types,
     :loan_products,
     :prepayment_penalty,
-    :borrower_eligibility
+    :borrower_eligibility,
+    :borrower_credit_score
 
-
-    
 end
 
 

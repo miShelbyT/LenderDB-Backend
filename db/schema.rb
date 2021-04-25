@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_24_162038) do
+ActiveRecord::Schema.define(version: 2021_04_25_202322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 2021_04_24_162038) do
     t.string "loan_products", default: [], array: true
     t.string "prepayment_penalty", default: [], array: true
     t.string "borrower_eligibility", default: [], array: true
+    t.integer "borrower_credit_score"
   end
-  
 
   create_table "states", force: :cascade do |t|
     t.string "name"

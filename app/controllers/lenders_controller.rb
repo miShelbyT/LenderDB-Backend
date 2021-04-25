@@ -63,6 +63,7 @@ class LendersController < ApplicationController
         :amortization,
         :loan_term,
         :recourse, 
+        :borrower_credit_score,
         provinces: [], 
         counties: [], 
         cities: [],
