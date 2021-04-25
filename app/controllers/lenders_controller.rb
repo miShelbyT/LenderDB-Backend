@@ -65,7 +65,11 @@ class LendersController < ApplicationController
         :recourse, 
         provinces: [], 
         counties: [], 
-        cities: []
+        cities: [],
+        property_types: [],
+        loan_products: [],
+        prepayment_penalty: [],
+        borrower_eligibility: []
       )
     end
 end

@@ -19,7 +19,13 @@ class LenderSerializer < ActiveModel::Serializer
     :website,
     :amortization,
     :loan_term,
-    :recourse
+    :recourse,
+    :property_types,
+    :loan_products,
+    :prepayment_penalty,
+    :borrower_eligibility
+
+
     
 end
 
